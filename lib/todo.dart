@@ -1,32 +1,31 @@
-import 'dart:convert';
-
 class Todo {
-  int? id;
-  String? title;
-  String? description;
-  bool? status;
+  int id;
+  String title;
+  String description;
+  bool status;
 
-  Todo({this.id, this.title, this.description, this.status}) {
-    id = this.id;
-    title = this.title;
-    description = this.description;
-    status = this.status;
-  }
+  Todo({
+    required this.id,
+    required this.title,
+    required this.description,
+    required this.status,
+  });
 
-  toJson() {
+  Map<String, dynamic> toJson() {
     return {
-      "id": id,
-      "description": description,
-      "title": title,
-      "status": status
+      'id': id,
+      'title': title,
+      'description': description,
+      'status': status,
     };
   }
 
-  fromJson(jsonData) {
+  static Todo fromJson(Map<String, dynamic> json) {
     return Todo(
-        id: jsonData['id'],
-        title: jsonData['title'],
-        description: jsonData['description'],
-        status: jsonData['status']);
+      id: json['id'],
+      title: json['title'] ?? 'Untitled',
+      description: json['description'] ?? '',
+      status: json['status'] ?? false,
+    );
   }
 }
