@@ -1,16 +1,37 @@
-# todo_task
 
-A new Flutter project.
+# Todo Task
+
+This Flutter project is a simple task management app that allows users to add, edit, and delete tasks.
+
+## Features
+
+- Create new tasks with titles and descriptions
+- Edit existing tasks
+- Mark tasks as completed or delete them
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- [Flutter SDK](https://flutter.dev/docs/get-started/install)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ZaidBaloch01/todo_task.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd todo_task
+   ```
+3. Run the app:
+   ```bash
+   flutter run
+   ```
+
+## Resources
+
+- [Flutter Documentation](https://flutter.dev/docs)
+- [Flutter Cookbook](https://flutter.dev/docs/cookbook)
+
